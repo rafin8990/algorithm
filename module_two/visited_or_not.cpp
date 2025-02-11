@@ -39,14 +39,14 @@ int main()
         adj_list[b].push_back(a);
     }
     memset(vis, false, sizeof(vis));
-    // int src, dst;
-    // cin >> src >> dst;
-    bfs(0);
+    int src, dst;
+    cin >> src >> dst;
+    bfs(src);
 
-    // if (vis[dst])
-    //     cout << "YES\n";
-    // else
-    //     cout << "NO\n";
+    if (vis[dst])
+        cout << "YES\n";
+    else
+        cout << "NO\n";
 
     return 0;
 }
